@@ -1,11 +1,17 @@
+using Tyuiu.GrebenschikovAA.Sprint1.Task2.V15.Lib;
+
 namespace Tyuiu.GrebenschikovAA.Sprint1.Task2.V15.Test
 {
     [TestClass]
     public class DataServiceTest
     {
         [TestMethod]
-        public void TestMethod1()
+        public void ValidExpression()
         {
+            DataService ds = new DataService();
+            int x = 2;
+            var res = ds.CalculateCubeVolume(x);
+            Assert.AreEqual(8, res);
         }
     }
 }
